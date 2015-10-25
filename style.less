@@ -1,5 +1,149 @@
-@blue: #0000FF;
+@navActive: #3D4751;
+@pageRed: #B62537;
+@raleway: "Raleway", sans-serif;
 
 body {
 	background-image: url("imgs/background.png");
+}
+
+.wrapper {
+	margin: 50px auto 0;
+	width: 76%;
+}
+
+.wrapBack {
+	background-color: #FFFFFF;
+	float: left;
+}
+
+nav {
+	color: #FFFFFF;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0 auto 40px;
+	width: 925px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	background-color: @pageRed;
+	display: inline-block;
+	margin: auto -3px;
+	padding: 23px 15px 16px;
+}
+
+nav ul li:hover {
+	background-color: @navActive;
+}
+
+nav ul a {
+	color: #FFFFFF;
+}
+
+.navActive {
+	background-color: @navActive;
+	border-bottom: solid 2px #52A1D2;
+	padding-bottom: 14px;
+}
+
+aside {
+	color: #2980B9;
+	float: left;
+	font-family: @raleway;
+	font-size: 24px;
+	font-weight: 700;
+	margin-left: 50px;
+	margin-right: 4%;
+	width: 20%;
+}
+
+aside img:first-of-type {
+	width: 205px;
+	margin: 0;
+}
+
+aside img {
+	margin: 35px 5px;
+}
+
+aside hr {
+	background-color: rgba(0, 0, 0, 0.08);
+	border: none;
+	height: 1px;
+}
+
+aside span {
+	margin-top: 25px;
+}
+
+aside span:last-of-type {
+	font-size: 32px;
+	padding: 35px 0;
+}
+
+.asideBody {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 14px 0;
+}
+
+#indexMain {
+	color: #444444;
+	display: inline-block;
+	float: left;
+	font-family: @raleway;
+	height: 100%;
+	width: 66%;
+}
+
+#indexMain h3 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0;
+}
+
+#indexMain p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+#indexMain p:first-of-type {
+	margin-top: 0px;
+}
+
+#indexMain p:nth-of-type(2) {
+	margin-bottom: 35px;
+}
+
+#indexMain hr {
+	background-color: rgba(0, 0, 0, 0.08);
+	border: none;
+	height: 1px;
+}
+
+#indexMain h2 {
+	color: @pageRed;
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0;
+	width: 80%;
+}
+
+#indexMain img {
+	float: left;
+	margin-top: 0;
+}
+
+#indexMain p:last-of-type {
+	float: left;
+	margin-left: 15px;
+	margin-top: 0;
+	width: 75%;
 }
