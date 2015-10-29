@@ -1,5 +1,7 @@
 @navActive: #3D4751;
 @pageRed: #B62537;
+@pageBack: #FFFFFF;
+@pageBlack: #444444;
 @raleway: "Raleway", sans-serif;
 
 body {
@@ -12,8 +14,9 @@ body {
 }
 
 .wrapBack {
-	background-color: #FFFFFF;
+	background-color: @pageBack;
 	float: left;
+	margin-bottom: 50px;
 }
 
 nav {
@@ -95,7 +98,7 @@ aside span:last-of-type {
 }
 
 #indexMain {
-	color: #444444;
+	color: @pageBlack;
 	display: inline-block;
 	float: left;
 	font-family: @raleway;
@@ -146,4 +149,85 @@ aside span:last-of-type {
 	margin-left: 15px;
 	margin-top: 0;
 	width: 75%;
+}
+
+.bottomMain {
+	background-color: @pageBack;
+	color: @pageBlack;
+	float: left;
+	font-family: @raleway;
+	margin-bottom: 75px;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+}
+
+.bottomMain span {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	width: 100%;
+}
+
+.bottomMain ul {
+	height: 30px;
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	width: 100%;
+}
+
+.bottomMain ul li {
+	border-right: solid 2px @pageBlack;
+	color: #BBDEFC;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 0 5px;
+}
+
+.bottomMain ul li:last-of-type {
+	border-right: none;
+}
+
+.bottomMain p {
+	font-size: 18px;
+	margin: 0 auto;
+	width: 65%;
+}
+
+.footerImage {
+	margin: 50px 50px;
+	max-height: 100px;
+	max-width: 200px;
+}
+
+footer {
+	display: inline-block;
+	height: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+footer ul {
+	display: inline-block;
+	height: 30px;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+footer ul li {
+	border-right: solid 2px @pageBlack;
+	color: @pageBlack;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 0 5px;
+}
+
+footer ul li:last-of-type {
+	border-right: none;
 }
