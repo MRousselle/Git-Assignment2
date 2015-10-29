@@ -2,6 +2,8 @@
 @pageRed: #B62537;
 @pageBack: #FFFFFF;
 @pageBlack: #444444;
+@pageLightBlue: #3498D8;
+@hrColor: rgba(0, 0, 0, 0.08);
 @raleway: "Raleway", sans-serif;
 
 body {
@@ -75,7 +77,7 @@ aside img {
 }
 
 aside hr {
-	background-color: rgba(0, 0, 0, 0.08);
+	background-color: @hrColor;
 	border: none;
 	height: 1px;
 }
@@ -85,6 +87,7 @@ aside span {
 }
 
 aside span:last-of-type {
+	display: inline-block;
 	font-size: 32px;
 	padding: 35px 0;
 }
@@ -126,7 +129,7 @@ aside span:last-of-type {
 }
 
 #indexMain hr {
-	background-color: rgba(0, 0, 0, 0.08);
+	background-color: @hrColor;
 	border: none;
 	height: 1px;
 }
@@ -149,6 +152,101 @@ aside span:last-of-type {
 	margin-left: 15px;
 	margin-top: 0;
 	width: 75%;
+}
+
+#aboutMain {
+	color: @pageBlack;
+	display: inline-block;
+	float: left;
+	font-family: @raleway;
+	font-size: 18px;
+	height: 100%;
+	width: 66%;
+}
+
+#aboutMain p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+#aboutMain p:last-of-type {
+	margin: 30px 0;
+}
+
+#aboutMain h3 {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 25px 0 0;
+}
+
+#aboutMain span {
+	color: @pageLightBlue;
+	display: inline-block;
+	font-size: 18px;
+	width: 100%;
+}
+
+#aboutMain ul li {
+	line-height: 1.5;
+}
+
+#aboutMain #pdu {
+	width: auto;
+	display: inline;
+}
+
+#aboutMain .inline {
+	display: inline;
+}
+
+#aboutMain hr {
+	background-color: @hrColor;
+	border: none;
+	height: 1px;
+	margin-top: 50px;
+}
+
+#aboutMain h2 {
+	color: @pageRed;
+	font-size: 48px;
+	font-weight: 700;
+	margin: 0;
+	width: 100%;
+}
+
+#schedMain {
+	color: @pageBlack;
+	display: inline-block;
+	float: left;
+	font-family: @raleway;
+	font-size: 18px;
+	height: 100%;
+	width: 66%;
+}
+
+#schedMain table {
+	width: 80%;
+}
+
+#schedMain table td {
+	width: 50%;
+	padding: 10px;
+	border-bottom: solid 1px @hrColor;
+}
+
+#schedMain table td:first-of-type {
+	text-align: right;
+}
+
+#schedMain table td:last-of-type {
+	font-weight: 700;
+}
+
+#schedMain hr {
+	background-color: @hrColor;
+	border: none;
+	height: 1px;
 }
 
 .bottomMain {
