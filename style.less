@@ -1,13 +1,17 @@
+// Less Variables
+
 @navActive: #3D4751;
-@pageRed: #B62537;
+@pageRed: #B33572;
 @pageBack: #FFFFFF;
 @pageBlack: #444444;
 @pageLightBlue: #3498D8;
 @hrColor: rgba(0, 0, 0, 0.08);
 @raleway: "Raleway", sans-serif;
 
+//Body Styles
+
 body {
-	background-image: url("imgs/background.png");
+	background: url("imgs/background.png") no-repeat center center fixed;
 }
 
 .wrapper {
@@ -21,13 +25,31 @@ body {
 	margin-bottom: 50px;
 }
 
+//Header and Nav Styles
+
+header {
+	background-color: @pageRed;
+	width: 100%;
+}
+
+h1 {
+
+	color: @pageBack;
+	display: inline-block;
+	font-family: @raleway;
+	font-size: 48px;
+	font-weight: 700;
+	margin: 10px 0 0 50px;
+}
+
 nav {
 	color: #FFFFFF;
+	float: right;
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	margin: 0 auto 40px;
-	width: 925px;
+	width: auto;
 }
 
 nav ul {
@@ -39,7 +61,8 @@ nav ul li {
 	background-color: @pageRed;
 	display: inline-block;
 	margin: auto -3px;
-	padding: 23px 15px 16px;
+	padding: 29px 15px 16px;
+	transition: all .25s ease;
 }
 
 nav ul li:hover {
@@ -56,6 +79,8 @@ nav ul a {
 	padding-bottom: 14px;
 }
 
+//Aside Styles
+
 aside {
 	color: #2980B9;
 	float: left;
@@ -70,6 +95,7 @@ aside {
 aside img:first-of-type {
 	width: 205px;
 	margin: 0;
+	margin-top: 30px;
 }
 
 aside img {
@@ -109,6 +135,8 @@ aside span:last-of-type {
 	width: 66%;
 }
 
+//Main Index Styles
+
 #indexMain h3 {
 	font-size: 18px;
 	font-weight: 700;
@@ -136,15 +164,17 @@ aside span:last-of-type {
 
 #indexMain h2 {
 	color: @pageRed;
-	font-size: 48px;
+	font-size: 36px;
 	font-weight: 700;
 	margin: 0;
+	margin-bottom: 20px;
 	width: 80%;
 }
 
 #indexMain img {
 	float: left;
 	margin-top: 0;
+	width: 150px;
 }
 
 #indexMain p:last-of-type {
@@ -153,6 +183,8 @@ aside span:last-of-type {
 	margin-top: 0;
 	width: 75%;
 }
+
+//Main About Styles
 
 #aboutMain {
 	color: @pageBlack;
@@ -209,11 +241,13 @@ aside span:last-of-type {
 
 #aboutMain h2 {
 	color: @pageRed;
-	font-size: 48px;
+	font-size: 36px;
 	font-weight: 700;
 	margin: 0;
 	width: 100%;
 }
+
+//Main Schedule Styles
 
 #schedMain {
 	color: @pageBlack;
@@ -249,6 +283,8 @@ aside span:last-of-type {
 	height: 1px;
 }
 
+//Bottom Main Styles
+
 .bottomMain {
 	background-color: @pageBack;
 	color: @pageBlack;
@@ -279,7 +315,7 @@ aside span:last-of-type {
 
 .bottomMain ul li {
 	border-right: solid 2px @pageBlack;
-	color: #BBDEFC;
+	color: @pageLightBlue;
 	display: inline-block;
 	font-size: 18px;
 	font-weight: 700;
@@ -295,6 +331,8 @@ aside span:last-of-type {
 	margin: 0 auto;
 	width: 65%;
 }
+
+//Footer Styles
 
 .footerImage {
 	margin: 50px 50px;
@@ -319,7 +357,7 @@ footer ul {
 
 footer ul li {
 	border-right: solid 2px @pageBlack;
-	color: @pageBlack;
+	color: @pageRed;
 	display: inline-block;
 	font-size: 18px;
 	font-weight: 700;
