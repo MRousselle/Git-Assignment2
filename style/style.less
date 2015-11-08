@@ -8,6 +8,33 @@
 @hrColor: rgba(0, 0, 0, 0.08);
 @raleway: "Raleway", sans-serif;
 
+@import "index.less";
+@import "about.less";
+@import "schedule.less";
+
+// Class Variables
+
+.defaultMain {
+	color: @pageBlack;
+	display: inline-block;
+	float: left;
+	font-family: @raleway;
+	font-size: 18px;
+	height: 100%;
+	width: 66%;
+}
+
+.mainH2 {
+	color: @pageRed;
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.mainH3 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
 //Body Styles
 
 body {
@@ -60,7 +87,7 @@ nav ul {
 nav ul li {
 	background-color: @pageRed;
 	display: inline-block;
-	margin: auto -3px;
+	//margin: auto -3px;
 	padding: 29px 15px 16px;
 	transition: all .25s ease;
 }
@@ -124,163 +151,6 @@ aside span:last-of-type {
 	font-weight: 400;
 	line-height: 1.5;
 	padding: 14px 0;
-}
-
-#indexMain {
-	color: @pageBlack;
-	display: inline-block;
-	float: left;
-	font-family: @raleway;
-	height: 100%;
-	width: 66%;
-}
-
-//Main Index Styles
-
-#indexMain h3 {
-	font-size: 18px;
-	font-weight: 700;
-	margin: 0;
-}
-
-#indexMain p {
-	font-size: 18px;
-	line-height: 1.5;
-}
-
-#indexMain p:first-of-type {
-	margin-top: 0px;
-}
-
-#indexMain p:nth-of-type(2) {
-	margin-bottom: 35px;
-}
-
-#indexMain hr {
-	background-color: @hrColor;
-	border: none;
-	height: 1px;
-}
-
-#indexMain h2 {
-	color: @pageRed;
-	font-size: 36px;
-	font-weight: 700;
-	margin: 0;
-	margin-bottom: 20px;
-	width: 80%;
-}
-
-#indexMain img {
-	float: left;
-	margin-top: 0;
-	width: 150px;
-}
-
-#indexMain p:last-of-type {
-	float: left;
-	margin-left: 15px;
-	margin-top: 0;
-	width: 75%;
-}
-
-//Main About Styles
-
-#aboutMain {
-	color: @pageBlack;
-	display: inline-block;
-	float: left;
-	font-family: @raleway;
-	font-size: 18px;
-	height: 100%;
-	width: 66%;
-}
-
-#aboutMain p {
-	font-size: 18px;
-	line-height: 1.5;
-	margin: 0;
-}
-
-#aboutMain p:last-of-type {
-	margin: 30px 0;
-}
-
-#aboutMain h3 {
-	font-size: 18px;
-	font-weight: 700;
-	margin: 25px 0 0;
-}
-
-#aboutMain span {
-	color: @pageLightBlue;
-	display: inline-block;
-	font-size: 18px;
-	width: 100%;
-}
-
-#aboutMain ul li {
-	line-height: 1.5;
-}
-
-#aboutMain #pdu {
-	width: auto;
-	display: inline;
-}
-
-#aboutMain .inline {
-	display: inline;
-}
-
-#aboutMain hr {
-	background-color: @hrColor;
-	border: none;
-	height: 1px;
-	margin-top: 50px;
-}
-
-#aboutMain h2 {
-	color: @pageRed;
-	font-size: 36px;
-	font-weight: 700;
-	margin: 0;
-	width: 100%;
-}
-
-//Main Schedule Styles
-
-#schedMain {
-	color: @pageBlack;
-	display: inline-block;
-	float: left;
-	font-family: @raleway;
-	font-size: 18px;
-	height: 100%;
-	width: 66%;
-}
-
-#schedMain table {
-	width: 80%;
-}
-
-#schedMain table td {
-	width: 50%;
-	padding: 10px;
-	border-bottom: solid 1px @hrColor;
-}
-
-#schedMain table td:first-of-type {
-	text-align: right;
-}
-
-#schedMain table td:last-of-type {
-	font-weight: 700;
-}
-
-#schedMain hr {
-	background-color: @hrColor;
-	border: none;
-	height: 1px;
 }
 
 //Bottom Main Styles
